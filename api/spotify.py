@@ -16,6 +16,10 @@ load_dotenv(find_dotenv())
 #   user-read-recently-played
 SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
 SPOTIFY_SECRET_ID = os.getenv("SPOTIFY_SECRET_ID")
+
+logging.basicConfig(level=logging.DEBUG)
+logging.debug(f"CLIENT_ID: {SPOTIFY_CLIENT_ID}")
+logging.debug(f"CLIENT_SECRET: {SPOTIFY_SECRET_ID}")
 SPOTIFY_REFRESH_TOKEN = os.getenv("SPOTIFY_REFRESH_TOKEN")
 SPOTIFY_TOKEN = ""
 
