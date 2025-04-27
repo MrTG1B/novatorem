@@ -10,6 +10,7 @@ app.secret_key = os.environ.get('FLASK_SECRET_KEY', 'change_this_in_prod')
 CLIENT_ID = os.environ.get('SPOTIFY_CLIENT_ID')
 CLIENT_SECRET = os.environ.get('SPOTIFY_CLIENT_SECRET')
 REDIRECT_URI = os.environ.get('SPOTIFY_REDIRECT_URI')  # e.g. https://your-tunnel.io/callback
+
 print(f"Client ID: {CLIENT_ID}")
 print(f"Client Secret: {CLIENT_SECRET}")
 print(f"Redirect URI: {REDIRECT_URI}")
