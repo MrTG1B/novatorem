@@ -15,13 +15,13 @@ load_dotenv(find_dotenv())
 # Spotify scopes:
 #   user-read-currently-playing
 #   user-read-recently-played
-SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
-SPOTIFY_SECRET_ID = os.getenv("SPOTIFY_SECRET_ID")
+SPOTIFY_CLIENT_ID = "edde6daf94454626b61230f8fb440f8c"
+SPOTIFY_SECRET_ID = "0d27cbf2924e4946bd032c2da6c5c5ea"
 
 logging.basicConfig(level=logging.DEBUG)
 logging.debug(f"CLIENT_ID: {SPOTIFY_CLIENT_ID}")
 logging.debug(f"CLIENT_SECRET: {SPOTIFY_SECRET_ID}")
-SPOTIFY_REFRESH_TOKEN = os.getenv("SPOTIFY_REFRESH_TOKEN")
+SPOTIFY_REFRESH_TOKEN = "AQCTV_dfbrVMnVnJBD-GIWjNU5VVf_cSrlU3ynN3DXJSbNwPG-pbZFjQa65Ng5vAiSv0DsrnQGpXM_bRbI3uI2VTUIo0dS7p5unWUIT3kazDKnNi9ADw8qxWhREkeHDJR4w"
 SPOTIFY_TOKEN = ""
 
 print(f"CLIENT_ID: {SPOTIFY_CLIENT_ID}")
